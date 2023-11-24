@@ -12,7 +12,7 @@ class Pokemon:
         self.en_name = en_name
         self.weight = weight
         self.height = height
-        self.flavor_texr = flavor_text
+        self.flavor_text = flavor_text
         self.img = img
 
 #! 関数定義
