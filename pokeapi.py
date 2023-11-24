@@ -42,7 +42,7 @@ def get_pokemon(id):
         if name["language"]["name"] == "ja":
             pokemon.ja_name = name["name"]
             break
-    print(pokemon.ja_name)
+    # print(pokemon.ja_name) #* デバック用
 
     #* 日本語のフレーバーテキスト取得
     flavor_text_entries = pokeapi_species["flavor_text_entries"]
@@ -59,7 +59,7 @@ def download_img(pokemon: Pokemon):
     #* 同じファイル名があるか確認、なければPokeApiから画像をダウンロード
     current_dir = os.path.dirname(__file__)
     img_path = f"{current_dir}/img/{pokemon.en_name}.png"
-    print(img_path)
+    # print(img_path) #* デバック用
 
     #* 同名の画像ファイルがなければダウンロードして保存
     if not os.path.isfile(img_path):
@@ -72,4 +72,4 @@ def download_img(pokemon: Pokemon):
     #* ローカルの画像パスを設定
     pokemon.img = img_path
 
-print(get_pokemon(2).flavor_text) #* デバック用
+# print(get_pokemon(2).flavor_text) #* デバック用
