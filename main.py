@@ -25,6 +25,7 @@ if __name__ == "__main__":
     pokemon_frame.pack()
 
     #? 図鑑番号入力用のウィジェット用意
+        #* tk.Label(第一引数,… -> 1つ用意したフレーム(entry)に配置することを宣言しているらしい
     entry_label = tk.Label(entry_frame, text="図鑑番号:", font=font_size)
     entry_id = tk.Entry(entry_frame, font=font_size)
     entry_button = tk.Button(
@@ -32,6 +33,7 @@ if __name__ == "__main__":
     )
 
     #? ウィジェット配置
+        #* pack()だと横並びにできないのでgrid()を使ったらしい
     entry_label.grid(row=0, column=0)
     entry_id.grid(row=0, column=1)
     entry_button.grid(row=0, column=2)
