@@ -52,11 +52,11 @@ if __name__ == "__main__":
         width=400,
     )
 
-    # ウィジェット配置
+    #? ウィジェット配置
     name_label.pack()
     image_label.pack()
     data_label.pack()
     flavor_text_msg.pack(pady=(10, 0))
 
-		# メインループ
+	#? メインループ
     root.mainloop()
